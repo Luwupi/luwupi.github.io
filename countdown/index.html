@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		<div style='display:table-cell;' id='select'>
+			<input id='dh' type='text' maxlength='2' size='1'>:<input id='dm' type='text' maxlength='2' size='1'>:<input id='ds' type='text' maxlength='2' size='1'>
+			<br><br>
+			<input id='d' type='text' maxlength='2' size='1'>/<input id='mo' type='text' maxlength='2' size='1'>/<input id='y' type='text' maxlength='4' size='3'>
+			<input id='h' type='text' maxlength='2' size='1'>:<input id='mi' type='text' maxlength='2' size='1'>:<input id='s' type='text' maxlength='2' size='1'>
+			<br><br>
+			<button onclick='go()'>Go!</button>
+		</div>
+		
+		<div style='display:none;' id='clock'>
+			<table>
+				<tr>
+					<td id="ytime" class="year">0</td>
+					<td id="dtime">000</td>
+					<td id="htime">00</td>
+					<td id="mtime">00</td>
+					<td id="stime">00</td>
+				</tr>
+				<tr>
+					<th class="year">Years</th>
+					<th>Days</th>
+					<th>Hours</th>
+					<th>Minutes</th>
+					<th>Seconds</th>
+				</tr>
+			</table>
+		</div>
+		<script src="num.js"></script>
+	</body>
+ </html>
