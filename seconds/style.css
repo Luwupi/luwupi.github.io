@@ -1,0 +1,51 @@
+body, html {
+	background-color: #333333;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+div {
+	display: table-cell;
+	width: 100vw;
+	font-size: 40vh;
+	font-family: monospace;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	vertical-align: center;
+	margin: 0px;
+}
+
+input {
+	background-color: #333333;
+	color: white;
+	font-size: 10vh;
+	border: 3px solid white;
+	font-family: monospace;
+	text-align: right;
+}
+
+button {
+	background-color: #555555;
+	color: white;
+	font-size: 10vh;
+	padding: 10px;
+	border: 3px solid white;
+	font-family: monospace;
+}
+
+#select {
+	font-size: 10vh;
+	padding-top: 20vh;
+}
+
+#clock {
+	font-size: 40vh;
+	padding-top: 25vh;
+}
+
+#hstime {
+	font-size: 20vh;
+	color: dimgrey;
+}
