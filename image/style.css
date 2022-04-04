@@ -1,0 +1,48 @@
+body, html {
+	background-color: #333333;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+div {
+	display: table-cell;
+	width: 100vw;
+	font-size: 40vh;
+	font-family: monospace;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	vertical-align: center;
+	margin: 0px;
+}
+
+h1 {
+	color: white;
+	font-size: 36px;
+	font-family: monospace;
+}
+
+main {
+	display: table;
+	margin: auto;
+}
+
+input {
+	background-color: #333;
+	color: white;
+	font-size: 36px;
+	font-family: monospace;
+}
+
+button {
+	background-color: #666;
+	color: white;
+	font-size: 36px;
+	font-family: monospace;
+}
+
+button:hover {
+	background-color: #888;
+}
+
