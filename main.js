@@ -157,7 +157,7 @@ class ColonSegment {
 const FRAMERATE = 30;
 const WIDTH = 128;
 const PAD = 20;
-const END = 1653026400;
+const END = 1653022800;
 
 var segments = [];
 
@@ -200,7 +200,6 @@ function draw() {
       segments[s].draw();
     }
   }
-  
 }
 
 var lastTime;
