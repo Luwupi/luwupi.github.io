@@ -208,7 +208,7 @@ function main() {
   let now = new Date().getTime();
   now = Math.floor(now/1000);
   if (now == lastTime) return null;
-  
+  if (END <= now) return "00000000";
   let dt = END - now;
   let s = Math.floor(dt%60) + "";
   let m = Math.floor(dt%3600 / 60) + "";
