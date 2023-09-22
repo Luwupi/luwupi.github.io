@@ -5,8 +5,6 @@ const RESPONSES = document.getElementById("mainTable");
 const SCROLLPT = document.getElementById("scrollPoint");
 const TYPE = {IN: 0, OUT: 1};
 
-
-
 var id = 0;
 
 // event listener for text box
