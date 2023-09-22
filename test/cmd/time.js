@@ -2,7 +2,7 @@ function runc() {
 	return new Date().getTime();
 }
 
-export const time = {
+export default {
 	name: "time",
 	desc: "Current Unix time",
 	aliases: [],

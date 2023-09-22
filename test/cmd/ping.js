@@ -2,7 +2,7 @@ function runc() {
 	return "Pong!";
 }
 
-export const ping = {
+export default {
 	name: "ping",
 	desc: "Check the game is functioning",
 	aliases: [],
