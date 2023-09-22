@@ -1,4 +1,4 @@
-var ping = import cmd from "./cmd/ping.js";
+import * as ping from "./cmd/ping.js";
 
 function processCmd(msg) {
 	c = msg.split(/\s+/g, 1)[0]; //split on whitespace
