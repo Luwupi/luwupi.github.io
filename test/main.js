@@ -5,6 +5,8 @@ export function processCmd(msg) {
 	switch (c) {
 		case "ping":
 			return cmd.ping.run(msg);
+		case "time":
+			return cmd.time.run(msg);
 		default:
 			return "idk";
 	}
