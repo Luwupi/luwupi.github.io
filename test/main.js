@@ -1,13 +1,13 @@
-import * as cmd from "./cmd/ping.js";
-import * as cmd from "./cmd/time.js";
+import ping from "./cmd/ping.js";
+import time from "./cmd/time.js";
 
 export function processCmd(msg) {
 	let c = msg.split(/\s+/g, 1)[0]; //split on whitespace
 	switch (c) {
 		case "ping":
-			return cmd.ping.run(msg);
+			return ping.run(msg);
 		case "time":
-			return cmd.time.run(msg);
+			return time.run(msg);
 		default:
 			return "idk";
 	}
