@@ -3,8 +3,8 @@ function ping() {
 }
 
 export const cmd = {
-	name = "ping",
-	desc = "Check the game is functioning",
-	aliases = [],
+	name: "ping",
+	desc: "Check the game is functioning",
+	aliases: [],
 	run(msg) { return ping(); }
 }
