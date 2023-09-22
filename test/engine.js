@@ -1,7 +1,11 @@
+import { processCmd } from "./main.js";
+
 const INPUTBOX = document.getElementById("msgIn");
 const RESPONSES = document.getElementById("mainTable");
 const SCROLLPT = document.getElementById("scrollPoint");
 const TYPE = {IN: 0, OUT: 1};
+
+
 
 var id = 0;
 
