@@ -27,6 +27,9 @@ function sendInput() {
 	// respond with OUT message
 	addMessage(TYPE.OUT, respond(msg));
 	
+	// delete excess responses
+	purge(50);
+	
 	// scroll to bottom of latest response
 	SCROLLPT.scrollIntoView(false);
 	
@@ -55,7 +58,10 @@ function sf(str) {
  * Purges messages so only the last `limit` messages are displayed 
  */
 function purge(limit) {
-	// implement at some point haha
+	var resps = RESPONSES.children;
+	while (resps.length > limit*2) {
+		resps[0].remove();
+	}
 }
 
 function getInfo(type) {

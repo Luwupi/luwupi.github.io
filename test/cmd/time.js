@@ -4,7 +4,7 @@ function runc() {
 
 export default {
 	name: "time",
-	desc: "Current Unix time",
+	desc: "Current system time",
 	aliases: [],
 	run(msg) { return runc(); }
 }
