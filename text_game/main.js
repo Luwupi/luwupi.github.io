@@ -22,13 +22,13 @@ function help(msg) {
 	let args = msg.toLowerCase().split(/\s+/g, 2);
 	if (args.length == 1) {
 		let s = "";
-		for (cmd of cmds) {
+		for (let cmd of cmds) {
 			s += cmd.name + " - " + cmd.desc + "\n"; 
 		}
 		return s;
 	}
 		
-	for (cmd of cmds) {
+	for (let cmd of cmds) {
 		if (cmd.name == args[1]) {
 			return "Command: " + cmd.name + "\n" + cmd.desc;
 		}
