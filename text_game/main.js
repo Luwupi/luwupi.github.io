@@ -6,11 +6,15 @@ const cmds = [ping, time];
 export function processCmd(msg) {
 	let c = msg.split(/\s+/g, 1)[0].toLowerCase(); //split on whitespace
 	
+	if (c == "help") return help(msg);
+	
 	for (const cmd of cmds) {
 		if (cmd.name == c || cmd.aliases.includes(c)) {
 			return cmd.run(msg);
 		}
 	}
+	
+	return "Unrecognised command - type help for help";
 }
 
 /** Help needs all other commands so exists here */
