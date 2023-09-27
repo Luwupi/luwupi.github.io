@@ -44,7 +44,7 @@ function addMessage(type, msg) {
 }
 
 function respond(msg) {
-	return processCmd(msg);
+	return sf(processCmd(msg));
 }
 
 /**
@@ -55,7 +55,7 @@ function sf(str) {
 }
 
 /** 
- * Purges messages so only the last `limit` messages are displayed 
+ * Purges messages so only the last limit messages are displayed 
  */
 function purge(limit) {
 	var resps = RESPONSES.children;
