@@ -20,7 +20,7 @@ export function processCmd(msg) {
 /** Help needs all other commands so exists here */
 function help(msg) {
 	let args = msg.toLowerCase().split(/\s+/g, 2);
-	if (args.length() == 1) {
+	if (args.length == 1) {
 		let s = "";
 		for (cmd of cmds) {
 			s += cmd.name + " - " + cmd.desc + "\n"; 
