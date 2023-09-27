@@ -51,7 +51,7 @@ function respond(msg) {
  *  Make format good
  */
 function sf(str) {
-	return str.replaceAll(/\\n/gi, "<br>");
+	return str.replaceAll(/\n/g, "<br>");
 }
 
 /** 
