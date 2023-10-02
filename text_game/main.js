@@ -1,7 +1,9 @@
 import ping from "./cmd/ping.js";
 import time from "./cmd/time.js";
+import triangles from "./cmd/triangles.js";
 
-const cmds = [ping, time];
+const cmds = [ping, time, triangles];
+var id = 1;
 
 export function processCmd(msg) {
 	let c = msg.split(/\s+/g, 1)[0].toLowerCase(); //split on whitespace
@@ -10,7 +12,7 @@ export function processCmd(msg) {
 	
 	for (const cmd of cmds) {
 		if (cmd.name == c || cmd.aliases.includes(c)) {
-			return cmd.run(msg);
+			return cmd.run(msg, id);
 		}
 	}
 	
@@ -21,7 +23,7 @@ export function processCmd(msg) {
 function help(msg) {
 	let args = msg.toLowerCase().split(/\s+/g, 2);
 	if (args.length == 1) {
-		let s = "";
+		let s = "use help <command> for more info on a specific command\nhelp - shows this list";
 		for (let cmd of cmds) {
 			s += cmd.name + " - " + cmd.desc + "\n"; 
 		}

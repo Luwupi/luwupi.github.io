@@ -6,5 +6,5 @@ export default {
 	name: "ping",
 	desc: "Check the game is functioning",
 	aliases: [],
-	run(msg) { return runc(); }
+	run(msg, id) { return runc(); }
 }
