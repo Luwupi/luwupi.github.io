@@ -7,8 +7,8 @@ function runc(msg, id) {
 }
 
 export default {
-	name: "",
-	desc: "",
+	name: "start",
+	desc: "create a profile",
 	detailed: "",
 	examples: [],
 	aliases: [],
