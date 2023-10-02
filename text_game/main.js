@@ -1,8 +1,9 @@
 import ping from "./cmd/ping.js";
 import time from "./cmd/time.js";
 import triangles from "./cmd/triangles.js";
+import start from "./cmd/start.js";
 
-const cmds = [ping, time, triangles];
+const cmds = [ping, time, triangles, start];
 var id = 1;
 
 export function processCmd(msg) {
