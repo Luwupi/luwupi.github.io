@@ -1,8 +1,8 @@
 import player from "../user/Player.js";
 
 function runc(msg, id) {
-	if (!player.exists(id)) return "You don't have a profile! Use command start to start playing";
-	return player.get(id).getTriangles();
+	if (!player.exists(id)) return "You don't have a profile! Use command "start" to start playing";
+	return player.get(id).getTriangles(); + " triangles";
 }
 
 export default {
