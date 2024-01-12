@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<link rel="stylesheet" href="style.css">
+	
+	</head>
+	<body>
+		<header>
+			<h1>TWL06 Word Analyser</h1>
+		</header>
+		<div class="main">
+			<table>
+				<tr><td colspan=2><h2>Length</h2></td></tr>
+				<tr>
+					<td><label>Min Length</label></td>
+					<td><input size=1 maxlength=2 id="lenmin" value="2"></input></td>
+				</tr>
+				<tr>
+					<td><label>Max Length</label></td>
+					<td><input size=1 maxlength=2 id="lenmax" value="10"></input></td>
+				</tr>
+				<tr><td colspan=2><h2>Letters</h2></td></tr>
+				<tr>
+					<td><label>Must Have</label></td>
+					<td><input size=3 maxlength=15 id="contain"></input></td>
+				</tr>
+				<tr>
+					<td><label>Doesn't Have</label></td>
+					<td><input size=3 maxlength=15 id="forbid"></input></td>
+				</tr>
+				<tr>
+					<td colspan=2><button onclick="analyse()">Search</button></td>
+				</tr>
+				<tr><td colspan=2><h2>Substrings</h2></td></tr>
+				<tr>
+					<td><label>Starts with</label></td>
+					<td><input size=3 maxlength=15 id="start"></input></td>
+				</tr>
+				<tr>
+					<td><label>Ends with</label></td>
+					<td><input size=3 maxlength=15 id="end"></input></td>
+				</tr>
+				<tr>
+					<td><label>Contains</label></td>
+					<td><input size=3 maxlength=15 id="middle"></input></td>
+				</tr>
+			</table>
+			
+			<div>
+				<h1>Results</h1>
+				<h3><span id="count">0</span> words found</h3>
+				
+				<br>
+				
+				<ul id="results">
+				</ul>
+			</div>
+		</div>
+	</body>
+	
+	<script src="twl06-list.js"></script>
+	<script src="twl06.js"></script>
+
+</html>
